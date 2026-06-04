@@ -13,15 +13,15 @@
     justify-content: space-between;
     align-items: center;
 
-    padding-top: 10.3vh;
+    padding-top: 10.4vh;
     padding-left: 9.1vw;
     padding-right: 9.1vw;
 }
 
 .box-lorem {
     width: 12.62vw;
-    height: 5.2vh;
-    border-radius: 1vw;
+    height: 5.34vh;
+    border-radius: 0.5vw;
     box-shadow : 0.5vh 0.5vh 0.5vh 0.5vh rgba(0, 0, 0, 0.2);
 
     justify-content: center;
@@ -45,9 +45,7 @@
     text-align: center;
     font-size: 1.9vh;
 }
-.img-thuoc{
-    background-image: url(../images/image1018.png);
-    background-size: contain;
+.img{
     background-position: center;
     background-repeat: no-repeat;
 
@@ -58,6 +56,24 @@
     width: 12.72vw;
     height: 13.52vh;
     position: absolute;
+}
+
+.thuoc{
+    background-image: url(../images/image1018.png);
+}
+
+.bieu-do-1{
+    background-image: url(../images/image1032.png);
+}
+.dau-lung{
+    background-image: url(../images/image1025.png);
+}
+
+.bieu-do-2{
+    background-image: url(../images/image1039.png);
+}
+.elders{
+    background-image: url(../images/image1046.png);
 }
 
 
