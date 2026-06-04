@@ -1,13 +1,16 @@
 $(document).ready(function () {
     // setting slide
-    currentSlide = "001";
+    currentSlide = "006";
     localStorage.setItem('current-slide', currentSlide);
     disableSwipe = false;
 
     //animation, if have serveral class with the same time appear, delcare in an array
     const animations = {
-        300: [".class1", ".hello"],
-        500: [".class2"],
+        300: [".thuoc"],
+        500: [".bieu-do-1"],
+        700: [".dau-lung"],
+        900: [".bieu-do-2"],
+        1100: [".elders"],
     };
 
     for (const [offset, elem] of Object.entries(animations)) {
@@ -18,10 +21,10 @@ $(document).ready(function () {
     var el = document.getElementById('container');
     swipedetect(el, function (swipedir) {
         if (swipedir == 'left') {
-            window.goToSlide("003");
+            //window.goToSlide("003");
         }
         if (swipedir == 'right') {
-            // disableSwipe = true;
+            window.goToSlide("005");
         }
     });
 });
