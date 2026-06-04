@@ -6,22 +6,22 @@ $(document).ready(function () {
 
     //animation, if have serveral class with the same time appear, delcare in an array
     const animations = {
-        300: [".class1", ".hello"],
-        500: [".class2"],
+        500: [".main-title", ".hello"],
+        700: [".hero-text", ".hero-img"],
     };
 
     for (const [offset, elem] of Object.entries(animations)) {
-        setTimeout(() => elem.forEach((e) => $(e).addClass("show")), offset);
+        setTimeout((e) => elem.forEach((e) => $(e).addClass("show")), offset);
     }
 
     // flow-slide
     var el = document.getElementById('container');
     swipedetect(el, function (swipedir) {
-        if (swipedir == 'left') {
-            window.goToSlide("003");
+        if (swipedir == 'left' && currentSlide != "006") {
+            window.goToSlide("002");
         }
-        if (swipedir == 'right') {
-            // disableSwipe = true;
+        if (swipedir == 'right' && currentSlide != "001") {
+            //window.goToSlide("001");
         }
     });
 });

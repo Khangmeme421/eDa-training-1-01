@@ -193,7 +193,7 @@ $(document).ready(function () {
 
   window.goToSlide = function (slideId) {
     var me = this,
-      slideName = "Train-01-";
+      slideName = "template-train-01-";
     if (slideId) {
       if (slideId !== "006") {
         localStorage.setItem("prev-slide", slideId);
