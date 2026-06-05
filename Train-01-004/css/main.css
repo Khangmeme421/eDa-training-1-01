@@ -1,0 +1,231 @@
+.ghost {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.5;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../thumb.png");
+  background-size: cover;
+  pointer-events: none;
+}
+
+.main-title {
+  font-size: 2.26vw;
+  font-weight: bold;
+  line-height: 1.26;
+  top: 4vh;
+  left: 9vw;
+}
+
+.chart-wrapper {
+  top: 20vh;
+  left: 5vw;
+  width: 90vw;
+  height: 64vh;
+}
+
+.chart-title {
+  text-align: center;
+  font-size: 2vw;
+  margin-top: 2vh;
+  color: green;
+}
+
+.chart-body {
+  display: flex;
+  align-items: flex-end;
+  width: 90vw;
+  height: 50vh;
+  top: -10vh;
+  left: 0;
+  position: relative;
+}
+
+.y-axis-label {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  font-size: 1vw;
+  color: green;
+  position: absolute;
+  top: 10vh;
+  left: 7vw;
+  height: 44vh;
+  text-align: center;
+}
+
+.y-ticks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.9vh;
+  height: 44vh;
+  top: 16vh;
+  left: 11.2vw;
+  text-align: right;
+  font-size: 1.2vw;
+  color: green;
+}
+
+.y-ticks span {
+  line-height: 1;
+}
+
+.oy-axis {
+  width: 1vw;
+  height: 29.5vh;
+  top: 17vh;
+  left: 13.7vw;
+  background: url("../images/oy.png") no-repeat left bottom / 100% 100%;
+  flex-shrink: 0;
+}
+
+.chart-plot {
+  flex: 1;
+  height: 49.5vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.bars-row {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 0 18vw;
+}
+
+.ox-axis {
+  width: 61.2vw;
+  height: 0.2vh;
+  top: 46vh;
+  left: 14vw;
+  background: url("../images/ox.png") no-repeat center / 100% 100%;
+}
+
+.x-labels {
+  display: flex;
+  justify-content: space-around;
+  padding: 1vh 18vw 0;
+}
+
+.x-label {
+  flex: 1;
+  text-align: center;
+  font-size: 1.3vw;
+  color: green;
+}
+
+.bar-group {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.2vw;
+  flex: 1;
+  justify-content: center;
+  height: 34.65vh;
+}
+
+.bar-col {
+  width: 3.5vw;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100% 100%;
+  position: relative;
+  border-radius: 0.5vw 0.5vw 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bar-col .bar-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.1vw;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.bar-col.c1 {
+  background-image: url("../images/colum-1.png");
+  height: 30.32vh;
+}
+.bar-col.c2 {
+  background-image: url("../images/colum-2.png");
+  height: 16.46vh;
+}
+.bar-col.c3 {
+  background-image: url("../images/colum-3.png");
+  height: 21.66vh;
+}
+.bar-col.c4 {
+  background-image: url("../images/colum-4.png");
+  height: 26.85vh;
+}
+.bar-col.c5 {
+  background-image: url("../images/colum-5.png");
+  height: 23.39vh;
+}
+.bar-col.c6 {
+  background-image: url("../images/colum-6.png");
+  height: 14.73vh;
+}
+.bar-col.c7 {
+  background-image: url("../images/colum-7.png");
+  height: 18.19vh;
+}
+.bar-col.c8 {
+  background-image: url("../images/colum-8.png");
+  height: 20.79vh;
+}
+.bar-col.c9 {
+  background-image: url("../images/colum-9.png");
+  height: 29.45vh;
+}
+.bar-col.c10 {
+  background-image: url("../images/colum-10.png");
+  height: 18.62vh;
+}
+
+.legend {
+  right: 4vw;
+  top: 37vh;
+  display: flex;
+  flex-direction: column;
+  gap: 4.5vh;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6vw;
+  font-size: 1.2vw;
+  color: green;
+}
+
+.legend-box {
+  width: 2vw;
+  height: 2.5vh;
+  border-radius: 0.2vw;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.legend-box.gray {
+  background-image: url("../images/note_gray.png");
+}
+.legend-box.green {
+  background-image: url("../images/note-green.png");
+}
+
+.chart-note {
+  text-align: center;
+  font-size: 1.2vw;
+  color: green;
+  top: 52vh;
+  left: 17vw;
+}
