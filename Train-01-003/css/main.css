@@ -1,0 +1,104 @@
+.ghost {
+    width: 100vw;
+    height: 100vh;
+    background: url('../thumb.png') no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: 10;
+}
+
+.main-title {
+    position: absolute;
+    width: 103.70vw;
+    height: 6.80vh;
+    top: 5.5vh;
+    left: 8.40vw;
+    font-size: 3.37vh;
+}
+
+.info-box {
+    width: 28.95vw;
+    top: 16.19vh;
+    left: 11.93vw;
+    box-sizing: border-box;
+}
+
+.info-header {
+    position: relative;
+    width: 100%;
+    min-height: 13.21vh;
+    background: linear-gradient(to right, #084725, #084725, #3bf2ff);
+    border-radius: 1.57vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5vw;
+    box-sizing: border-box;
+    font-size: 2.51vh;
+    line-height: 3.2vh;
+}
+
+.info-box.open .info-header {
+    border-radius: 1.57vw 1.57vw 0 0;
+}
+
+.info-box-2 {
+    top: 48.78vh;
+    
+}
+
+.info-icon {
+    width: 3vw;
+    height: 4vh;
+    top: -2.5vh;       
+    right: 2.2vw;       
+    background: #084725;
+    border-radius: 50%;
+    color: white;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    left: 8.4vw;
+    bottom: 3.2vh;
+    align-items: center;
+}
+
+.icon .logo-crux {
+    margin-top: 1vh;
+    margin-right: 2vw;
+}
+
+.icon .bg-icon {
+    margin-right: 2.1vw;
+}
+
+.circle-image {
+    width: 43vw;
+    height: 65vh;
+    top: -36vh;
+    left: 35vw;
+    background: url('../images/back-pain.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.info-detail {
+    display: none;
+    width: 100%;
+    background: #fff;
+    color: #5a5a5a;
+    font-size: 1.3vw;
+    line-height: 1.4;
+    padding: 1.5vh 1.5vw;
+    padding-left: 2.7vw;
+    box-sizing: border-box;
+    border-radius: 0 0 1.57vw 1.57vw;
+}
+
+.info-box.open .info-detail {
+    display: block;
+}
