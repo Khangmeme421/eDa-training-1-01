@@ -91,7 +91,7 @@
     opacity: 0.4; 
     position: absolute;
 
-    background-image: url(../ghost.png);
+    background-image: url(../images/ghost.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
