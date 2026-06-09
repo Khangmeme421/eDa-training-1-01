@@ -27,4 +27,21 @@ $(document).ready(function () {
             window.goToSlide("005");
         }
     });
+
+    // click on image and jump to a page
+    $(".thuoc").on("touchend click", function () {
+        window.goToSlide("001");
+      });
+    $(".bieu-do-1").on("touchend click", function () {
+        window.goToSlide("002");
+    });
+    $(".dau-lung").on("touchend click", function () {
+        window.goToSlide("003");
+      });
+    $(".bieu-do-2").on("touchend click", function () {
+        window.goToSlide("004");
+    });
+    $(".elders").on("touchend click", function () {
+        window.goToSlide("005");
+    });
 });
