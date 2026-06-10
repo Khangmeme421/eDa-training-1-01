@@ -1,11 +1,11 @@
-.ghost {
+/* .ghost {
     width: 100vw;
     height: 100vh;
     background: url('../thumb.png') no-repeat;
     background-size: cover;
     opacity: 0.5;
     z-index: 10;
-}
+} */
 
 .icon {
     left: 8.4vw;
